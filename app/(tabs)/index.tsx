@@ -1,52 +1,13 @@
 import React from "react";
-import { StyleSheet, ScrollView, View, Image } from "react-native";
-import ServiceItem from "../../components/ServiceItem";
+import { Text } from "@/components/ui/text";
+import { View } from "@/components/ui/view";
 
-export default function ServicesScreen() {
+export default function HomeScreen() {
   return (
-    <ScrollView style={styles.container}>
-      <View style={styles.logoContainer}>
-        <Image
-          source={require("../../assets/images/icon.png")}
-          style={styles.logo}
-        />
-      </View>
-      <ServiceItem
-        title="Ride"
-        description="Request a ride"
-        icon={require("../../assets/images/icon.png")}
-      />
-      <ServiceItem
-        title="Package"
-        description="Send a package"
-        icon={require("../../assets/images/icon.png")}
-      />
-      <ServiceItem
-        title="Rent"
-        description="Rent a car"
-        icon={require("../../assets/images/icon.png")}
-      />
-      <ServiceItem
-        title="Reserve"
-        description="Reserve a ride"
-        icon={require("../../assets/images/icon.png")}
-      />
-    </ScrollView>
+    <View className="flex flex-1 items-center justify-center">
+      <Text className="font-bold" size="xl">
+        Home Screen!
+      </Text>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  logoContainer: {
-    alignItems: "center",
-    padding: 20,
-  },
-  logo: {
-    width: 100,
-    height: 50,
-    resizeMode: "contain",
-  },
-});

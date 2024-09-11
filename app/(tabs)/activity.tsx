@@ -1,22 +1,13 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from "react";
+import { Text } from "@/components/ui/text";
+import { View } from "@/components/ui/view";
 
-export default function WelcomeScreen() {
+export default function ActivityScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Welcome three!</Text>
+    <View className="flex flex-1 items-center justify-center">
+      <Text className="font-bold" size="xl">
+        Activity Screen!
+      </Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
