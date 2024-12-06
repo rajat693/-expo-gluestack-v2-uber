@@ -1,10 +1,6 @@
 import React from "react";
 import { SafeAreaView } from "@/components/ui/safe-area-view";
-import {
-  ServiceItem1,
-  ServiceItem2,
-  ServiceItem3,
-} from "../../components/ServiceItem";
+import { ServiceItem1, ServiceItem2 } from "../../components/ServiceItem";
 import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Divider } from "@/components/ui/divider";
@@ -22,51 +18,50 @@ export default function ServicesScreen() {
           Go anywhere, get anything
         </Text>
 
-        <HStack className="gap-4 mt-12 w-full">
+        <HStack className="gap-4 mt-11 w-full">
           <ServiceItem1
             title="Trip"
-            icon={require("../../assets/images/car.png")}
+            img_path={require("../../assets/images/car.png")}
             promo
           />
           <ServiceItem1
             title="Intercity"
-            icon={require("../../assets/images/car_people.png")}
+            img_path={require("../../assets/images/car_people.png")}
             promo
           />
         </HStack>
+
         <HStack className="gap-4 mt-4 w-full">
           <ServiceItem2
             title="Rentals"
-            icon={require("../../assets/images/cars2.png")}
-            className="col-span-2"
+            img_path={require("../../assets/images/cars2.png")}
           />
           <ServiceItem2
             title="Reserve"
-            icon={require("../../assets/images/calender.png")}
-            className="col-span-2"
+            img_path={require("../../assets/images/calender.png")}
           />
           <ServiceItem2
             title="Group Ride"
-            icon={require("../../assets/images/car.png")}
-            className="col-span-2"
+            img_path={require("../../assets/images/car.png")}
           />
         </HStack>
       </VStack>
 
-      <Divider className="h-1 bg-typography-50 my-6" />
+      <Divider className="h-1.5 bg-typography-50 my-7" />
 
       <VStack className="px-4">
         <Text className="font-semibold" size="2xl">
           Get anything done
         </Text>
-        <HStack className="gap-4 mt-8 w-full">
-          <ServiceItem3
+        <HStack className="gap-4 mt-7 w-full">
+          <ServiceItem1
             title="Package"
-            icon={require("../../assets/images/box.png")}
+            img_path={require("../../assets/images/box.png")}
+            img_className="h-12 w-12 self-center mr-4"
           />
           <ServiceItem1
             title="Store pick-up"
-            icon={require("../../assets/images/store.png")}
+            img_path={require("../../assets/images/store.png")}
           />
         </HStack>
       </VStack>

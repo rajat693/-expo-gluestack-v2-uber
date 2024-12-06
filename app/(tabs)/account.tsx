@@ -4,7 +4,7 @@ import { SafeAreaView } from "@/components/ui/safe-area-view";
 
 export default function AccountScreen() {
   return (
-    <SafeAreaView className="flex flex-1 items-center justify-center">
+    <SafeAreaView className="bg-black flex-1 items-center justify-center">
       <Text className="font-bold" size="xl">
         Account Screen!
       </Text>

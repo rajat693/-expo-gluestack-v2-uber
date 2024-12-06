@@ -4,7 +4,7 @@ import { View } from "@/components/ui/view";
 
 export default function HomeScreen() {
   return (
-    <View className="flex flex-1 items-center justify-center">
+    <View className="flex-1 items-center justify-center bg-black">
       <Text className="font-bold" size="xl">
         Home Screen!
       </Text>
